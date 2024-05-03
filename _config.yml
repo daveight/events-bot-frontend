@@ -18,18 +18,23 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: EchoEventsBot
+title: EchoEventsBot - AI Telegram Bot to receive personalized events notifications
 email: your-email@example.com
-description: © 2024 echoeventsbot.online. All rights reserved.
+description: Welcome to EventsEchoAI, your premier Telegram bot for personalized event recommendations. Subscribe to concerts, workshops, and more tailored to your interests and location. With EventsEchoAI, discovering exciting events has never been easier!
+twitter:
+  card: summary
+  username: echoeventsai
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
+google_analytics: G-1YS42LHXJN
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.

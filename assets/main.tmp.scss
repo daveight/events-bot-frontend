@@ -1,0 +1,111 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+$content-width: 70%;
+
+@import "minima";
+
+header {
+    background-image: linear-gradient(to right, #87CEFA, #1E90FF); /* Sky to Ocean gradient */
+}
+
+.site-title {
+    font-weight: 600;
+}
+
+.content-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  align-items: center; /* Vertically center items */
+}
+
+.left-column {
+  padding: 10px;
+}
+
+.right-column {
+  padding: 10px;
+}
+
+.left-column h1 {
+  text-align: left; /* Align text left */
+  padding: 0 40px 0 0;
+}
+
+.color-frame {
+    background-image: linear-gradient(to right, #b6d0e2, #dbe9f4);
+  //background-color: powderblue;
+  padding: 40px 0;
+}
+
+.right-column .phone-frame {
+  text-align: center; /* Align image right */
+  margin: 0 auto;
+}
+
+/* Optional styling */
+h1 {
+  font-size: 24px;
+  font-weight: 400 !important;
+}
+
+button {
+  display: block; /* Ensures the button appears on its own line */
+  margin-top: 10px; /* Adds some space between the heading and the button */
+}
+
+
+.phone-frame {
+  position: relative;
+  width: 372px; /* Adjust width as needed */
+  height: 922px; /* Adjust height as needed */
+  background: url('img/phone_bg.png') no-repeat center center; /* Replace 'path/to/phone-frame.png' with the path to your phone frame image */
+  background-size: contain;
+}
+
+.phone-frame video {
+  position: absolute;
+  top: 80px;
+  left: 14px;
+  width: 343px;
+  object-fit: cover; /* Ensures the video covers the entire frame */
+}
+
+h1 {
+    font-size: 4em;
+    font-weight: 200 !important;
+    text-align: left;
+    line-height: 88px;
+}
+
+.flat-button {
+    background-image: linear-gradient(to right, #8A2BE2, #DA70D6); /* Gradient from blue-violet to orchid */
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 25px 2px 15px 0px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding a subtle shadow for depth */
+}
+
+.flat-button:hover {
+    background-image: linear-gradient(to right, #9932CC, #BA55D3); /* Darker purple gradient for hover effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25); /* Larger shadow on hover for a lifting effect */
+}
+
+.footer-col-3 {
+    text-align: right;
+}
+
+.site-nav .page-link {
+    font-size: 18px;
+    font-weight: 400;
+}
